@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  padding: 25px;
+  background-color: #fff;
+   transition: all ease .9s;
+}
+
+li {
+  list-style: none;
+}
+#wrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#mainbox {
+  background-color: gray;
+  flex: 95%;
+  max-width: 95%;
+  height: 100vh;
+}
+
+
+
+#sidebar {
+  flex: 5%;
+  max-width: 5%;
+ transition: all ease .8s;
+
+}
+
+.menus {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+}
+
+.ee{
+transform:rotate(-90deg);
+transition: all ease .9s;
+}
+
+
+.ham_box {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+}
+
+.hbg_btn {
+  padding-left: 10px;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hbg_btn > span {
+
+  position:absolute;
+  width: 25px;
+  height: 1px;
+  background-color:#000;
+  top: 5px;
+  transform-origin: 3px 1px;
+  transition: 0.5s all ease;
+    cursor: pointer;
+  height: 2px;
+
+}
+
+
+
+.hbg_btn span:nth-child(2) {
+   top: 50%;
+  height: 1px;
+   transform: translateY(-50%);
+   transition:.2s;
+
+}
+
+.hbg_btn span:nth-child(3) {
+    top: auto;
+    bottom: 5px;
+    transition:.5s;
+
+}
+
+.openMenu {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform:translateY(-50%);
+
+}
+
+.moving {
+
+}
